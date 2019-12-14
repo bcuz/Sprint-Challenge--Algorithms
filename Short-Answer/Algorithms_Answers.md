@@ -12,4 +12,4 @@ c) o(n) worst case because it will decrement from the number `bunnies` begins at
 
 ## Exercise II
 
-This is a good use case for binary search. The floors are sorted in ascending order. Looping and checking each floor would be too slow o(n). 
+This is a good use case for binary search. The floors are sorted in ascending order. Check the middle floor. If the eggs break on that floor, we can disregard all the floors above it. Then we check the middle floor of all the remaining floors and so on. Time complexity of log n.
