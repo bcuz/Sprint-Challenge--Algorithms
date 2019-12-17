@@ -121,27 +121,20 @@ class SortingRobot:
     #         self.swap_item()
     #         self.move_right()
     #         # self.swap_item()
-      
-    # for i in range(len(self._list)+1):        
-    # print(self._position)
-    # self.swap_item()
 
-    # if self.compare_item() == 1:            
-    #     self.swap_item()
-    #     self.move_left()
-    #     self.swap_item()
-    #     self.move_right()
-    #     # self.swap_item()
+    # insertion sort brainstorm
+    # [1, 2, 3, 1]
+    # while can move right
+    # move right
 
-    # self.swap_item()
-    # # print(self._position)
-    # self.move_right()
-
-    # print(self.compare_item())
-    # print(self._item)
+    # grab item
+    # move left
+    # compare item -> while held item is less than item:
+      # move left
+      # feel like i'd need a counter to do this way. to keep track of how many times
+      # i have to move back right to get where i left off.
 
     swapped = True
-    # for i in range(len()):
 
     while swapped:
       swapped = False
@@ -150,6 +143,8 @@ class SortingRobot:
         self.move_left()
 
       # print(self._list)
+
+      # this needs to be able to run for every element in the list.
       while self.can_move_right():
         self.swap_item()
         self.move_right()
